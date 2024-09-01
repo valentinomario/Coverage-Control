@@ -3,12 +3,12 @@ clear %!
 close all
 order_preservation = false;
 update_step = 1;
-n = 10; % sensors number
+n = 5; % sensors number
 lambda = [2.4, 2.8, 3.0, 4.2, 3.6]; % max sensor velocity
 lambda = rand(1,n)*5 + ones(1,n)*0.5;
 
 delta = deg2rad([1.2, 4.0, 1.6, 3.0, 1.8]); % measurement error upper bound
-delta = deg2rad(rand(1,n)*pi/10)*0;
+delta = deg2rad(rand(1,n)*360/20);
 
 delta_bar = zeros(n,n);
 
@@ -29,7 +29,7 @@ phi = [pi/6, pi/3, pi/2, pi/4, pi/5]; % error phase
 omega = rand(1,n)*10;
 phi = rand(1,n)*pi;
 
-q0 = sort(rand(1, n) * 0.2 * pi)'; % random position init
+q0 = sort(rand(1, n) * 2 * pi)'; % random position init
 
 Tf = 1000;
 T_star = pi/sum(lambda(1:n));
