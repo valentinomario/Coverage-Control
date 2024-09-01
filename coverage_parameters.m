@@ -8,7 +8,7 @@ lambda = [2.4, 2.8, 3.0, 4.2, 3.6]; % max sensor velocity
 lambda = rand(1,n)*5 + ones(1,n)*0.5;
 
 delta = deg2rad([1.2, 4.0, 1.6, 3.0, 1.8]); % measurement error upper bound
-delta = deg2rad(rand(1,n)*360/20);
+delta = deg2rad(rand(1,n)*360/10);
 
 delta_bar = zeros(n,n);
 
@@ -26,7 +26,7 @@ eta = 0.0005.*ones(1,n);
 omega = [1.5, 12, 8, 0.5, 21]; % error frequency
 phi = [pi/6, pi/3, pi/2, pi/4, pi/5]; % error phase
 
-omega = rand(1,n)*10;
+omega = rand(1,n)*2;
 phi = rand(1,n)*pi;
 
 q0 = sort(rand(1, n) * 2 * pi)'; % random position init
