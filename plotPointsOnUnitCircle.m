@@ -16,9 +16,10 @@ function plotPointsOnUnitCircle(q)
     plot(x, y, 'ro', 'MarkerSize', 8, 'MarkerFaceColor', 'r');
     
     for i = 1:length(q)
-        text(x(i) + 0.1, y(i), sprintf('q_%d', i));
+        angle_deg = rad2deg(q(i));
+        angle_text = sprintf('q_%d: %.2f°', i, angle_deg);
+        text(x(i) + 0.1, y(i), angle_text);
     end
 
-    
     hold off;
 end
