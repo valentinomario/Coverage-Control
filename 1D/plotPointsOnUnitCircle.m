@@ -1,5 +1,6 @@
 function plotPointsOnUnitCircle(q)
-
+% This function plots the angles in radians in the vector q
+    q = mod(q,2*pi);
     x = cos(q);
     y = sin(q);
 
@@ -9,11 +10,11 @@ function plotPointsOnUnitCircle(q)
     
     figure;
     set(gcf, 'color', 'w')
-    plot(x_circle, y_circle, 'b-', 'LineWidth', 1.5);
+    plot(x_circle, y_circle ,'k', 'LineWidth', 0.5);
     hold on;
     axis equal;
     axis off;
-    plot(x, y, 'ro', 'MarkerSize', 8, 'MarkerFaceColor', 'r');
+    plot(x, y, 'ro', 'MarkerSize', 5, 'MarkerFaceColor', 'r');
     
     for i = 1:length(q)
         angle_deg = rad2deg(q(i));
