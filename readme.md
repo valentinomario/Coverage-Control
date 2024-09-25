@@ -201,7 +201,7 @@ For detailed analysis, refer to the complete report by clicking the button below
 
 </div>
 
-[pdf]: ./media/Tesina.pdf
+[pdf]: https://github.com/valentinomario/Coverage-Control/blob/main/media/Tesina.pdf
 
 ## References
 
