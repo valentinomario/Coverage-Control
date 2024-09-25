@@ -81,12 +81,16 @@ The simulations demonstrate the effectiveness of the control law in achieving ne
   <p><em>1D Simulation Results with measurement errors, initial and final position</em></p>
 </div>
 
+
+#### Pinning control
+The sensors are able to maintain formation while in motion, albeit with an increase in steady-state error as the pinner velocity increased.
 <div align="center">
-  <img src="./media/img/1D_animation.gif" alt="1D Animation with Pinning Control" width="60%">
-  <p><em>1D Simulation Results with measurement errors, different sensors velocities, and pinning control</em></p>
+  <img src="./media/img/1D_animation.gif" alt="1D Animation with Pinning Control" width="30%">
+  <p><em>1D Simulation Results with measurement errors, different sensors maximum velocities, and pinning control</em></p>
 
 </div>
 
+<p>&nbsp;</p>
 
 <div align="center">
   <img src="./media/img/1D_results_near_optimum_pinning.png" alt="1D Simulation Results, Pinning Control" width="100%">
